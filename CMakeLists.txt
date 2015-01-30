@@ -77,15 +77,6 @@ INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/tools/)
 
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/libs/)
 
-#set(ExternalProjectCMakeArgs
-#    -DCMAKE_INSTALL_PREFIX=${PROJECT_SOURCE_DIR}/libs
-#    -DCMAKE_Fortran_COMPILER=${CMAKE_Fortran_COMPILER}
-#    -DCMAKE_C_COMPILER=${CMAKE_C_COMPILER}
-#    -DCMAKE_CXX_COMPILER=${CMAKE_CXX_COMPILER}
-#    -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
-#    )
-
-#add_external(liblazychord)
 include(ExternalProject)
 ExternalProject_Add(liblazychord
   DOWNLOAD_COMMAND echo "download"
