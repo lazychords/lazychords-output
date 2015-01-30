@@ -1,0 +1,11 @@
+SET(ABCToMidi_SRCS
+    tools/ABCToMidi/genmidi.c
+    tools/ABCToMidi/midifile.c
+    tools/ABCToMidi/parseabc.c
+    tools/ABCToMidi/parser2.c
+    tools/ABCToMidi/queues.c
+    tools/ABCToMidi/store.c
+)
+
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/tools/)
+ADD_LIBRARY(ABCToMidi ${ABCToMidi_SRCS})
