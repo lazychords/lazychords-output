@@ -10,6 +10,8 @@ This repository hosts the output facilities for the LazyChords project. Currentl
 To build the project, you need a recent C++ compiler (this project uses C++11, supported since gcc4.8), cmake, make, the boost library, and the FMODex library. On a linux system, the cmake script will try to download the FMODex library automatically, so if you are lucky, there's nothing to do about it.
 
 ```
+https://github.com/lazychords/lazychords-output.git
+sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
 sudo apt-get install cmake make g++ libboost-dev libboost-test-dev libboost-program-options-dev
 git submodule update --init --recursive
 mkdir build && cd build
