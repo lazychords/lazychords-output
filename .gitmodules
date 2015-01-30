@@ -1,0 +1,3 @@
+[submodule "libs/liblazychord"]
+	path = libs/liblazychord
+	url = git@github.com:lazychords/lazychords-lib.git
